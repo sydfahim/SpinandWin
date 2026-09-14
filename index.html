@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artisan Bakers Spin & Win</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="spin-app">
+      <header class="brand-header" aria-label="Artisan Bakers">
+        <img src="assets/ABlogo-main.png" alt="Artisan Bakers" class="brand-logo">
+      </header>
+
+      <section class="wheel-stage" aria-label="Spin and win game">
+        <div class="wheel-wrap">
+          <div class="pointer" aria-hidden="true"></div>
+          <canvas id="wheel" width="900" height="900" aria-label="Prize wheel"></canvas>
+          <button id="spinButton" class="spin-button" type="button">
+            <span>Spin</span>
+          </button>
+        </div>
+
+        <div class="result-panel" aria-live="polite">
+          <p class="panel-kicker">Summer Spin & Win</p>
+          <h1 id="resultTitle">Tap spin to play</h1>
+          <p id="resultCopy">Show the customer the wheel and let them spin.</p>
+          <button id="resetButton" class="reset-button" type="button">Next customer</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
